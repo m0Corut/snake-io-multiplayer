@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="/icon-192.png">
   <link rel="manifest" href="/manifest.webmanifest">
   <title>Snake.io Multiplayer</title>
-  <script type="module" crossorigin src="/snake-io-multiplayer/assets/index-9zEVUSEh.js"></script>
-  <link rel="stylesheet" crossorigin href="/snake-io-multiplayer/assets/index-aLT73nM0.css">
+  <script type="module" crossorigin src="/snake-io-multiplayer/assets/index-B9ZAAQRG.js"></script>
+  <link rel="stylesheet" crossorigin href="/snake-io-multiplayer/assets/index-BGXoTyks.css">
 <link rel="manifest" href="/snake-io-multiplayer/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/snake-io-multiplayer/registerSW.js"></script></head>
 <body>
   <!-- Game Canvas -->
@@ -81,7 +81,10 @@
   <div id="hud" class="hidden">
     <!-- Leaderboard -->
     <div id="leaderboard">
-      <h3>🏆 Leaderboard</h3>
+      <div class="leaderboard-header">
+        <h3>🏆 Leaderboard</h3>
+        <button id="leaderboardToggle" class="toggle-btn">▼</button>
+      </div>
       <ol id="leaderboardList"></ol>
     </div>
     
@@ -112,7 +115,7 @@
   
   <!-- Mobile Controls -->
   <div id="mobileControls" class="hidden">
-    <div id="joystickZone"></div>
+    <!-- Joystick removed, entire screen is touch area now -->
     <button id="boostButton" class="boost-btn">🚀</button>
   </div>
   
