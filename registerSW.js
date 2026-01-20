@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/snake-io-multiplayer/sw.js', { scope: '/snake-io-multiplayer/' })})}
